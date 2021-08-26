@@ -1,0 +1,92 @@
+GitHub token : c717fc2d0abb4f80eb670e792825a01b8aad7253
+--------------------------------------
+git commands-
+-------------
+git version
+
+git config --global user.name "Prasad Uplenchwar"
+ 
+git config --global user.email "prasaduplenchwar5@gmail.com"
+
+git config --global --list
+
+cat ~/ .gitconfig
+
+notepad++ ~/.gitconfig // to change name or mail
+
+
+git clone https://github.com/prasadupl/GitHub-Demo.git //git URL
+
+ls
+cd GitHub-Demo
+git status
+
+	|  //adding(push) file to github
+	|  1.new file
+	|  2.add (git add)
+	|  3.commit (git commit)
+	|  4.git push origin main 
+
+echo "Test Git Quick Start Demo" >> start.txt
+ls
+cat start.txt
+git status
+git add start.txt //git add .
+git status
+
+notepad++ start.txt //to add data or to modify file
+
+git checkout -- start.txt //to cancel recent changes in file data
+
+git mv start.txt first.txt //mv ->rename file
+
+
+git commit -m "Adding start text file"
+
+git push origin main or master
+
+git logm
+
+-----------------------------------------------------------
+#to change branch from master to other/new
+
+ git branch -a
+ git branch mynewbranch
+ git branch -a
+ git checkout mynewbranch //create new branch
+
+git branch -d myfeature //to delete branch myfeature if created
+
+----------------------------------------------------------
+-------
+Udemy -
+-------
+
+Git Quick Start Commands
+Command Listing, Part 1
+
+pwd
+mkdir projects
+cd projects
+pwd
+
+Command Listing, Part 2
+
+git version
+git config --global user.name "Abe Lincoln"
+git config --global user.email "mrabe@git.training"
+git config --global --list
+git clone github-https-url # paste in your GitHub HTTPS clone URL
+ls
+cd github-demo
+ls
+git status
+echo "Test Git Quick Start demo" >> start.txt
+ls
+cat start.txt
+git status
+git add start.txt
+git status
+git commit -m "Adding start text file"
+git status
+git push origin master //main
